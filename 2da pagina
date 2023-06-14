@@ -1,44 +1,33 @@
 <html>
 <body>
 <style>
- table {
-    width: 10%;
-    border-collapse: 4px;
-  }
 
-  th, td {
-    padding: 10px;
-    text-align: middle;
-    border-bottom: 1px solid black; /* lineas del cuadro */
-  }
-
-  th {
-    background-color: lightgreen; /* color del cartel de arriba */
-  }
 		body {
     background-color: lightblue; /* fondo de la paginaa /*
   }
 </style>
 
-<table>
 	
 	<tr> <h1></h1> </tr>
 <tr>
-        <th><a href="">Hola Mundo</a></th>
+        <th><a href=""></a></th>
        
 </tr>
 <tr>
-        <th><a href="">La Tabla de Componentes</a></th>
+        <th><a href=""></a></th>
 
 </tr>
 <tr>
-        <th><a href="">Mejores Amigos</a></th>
+        <th><a href=""></a></th>
 </tr>
 
 <tr>
-        <th><a href="">Mejores Bandas</a></th>
+        <th><a href=""></a></th>
 </tr>
-	
-</table>
+
+<br>
+<a href="https://maxicorrosa.github.io/ejercicio3casassss/ejercicio3.html">volver</a>
+</br>	
+
 </body>
 </html>
