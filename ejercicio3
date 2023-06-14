@@ -1,44 +1,29 @@
 <html>
 <body>
 <style>
- table {
-    width: 10%;
-    border-collapse: 4px;
-  }
 
-  th, td {
-    padding: 10px;
-    text-align: middle;
-    border-bottom: 1px solid black; /* lineas del cuadro */
-  }
-
-  th {
-    background-color: lightgreen; /* color del cartel de arriba */
-  }
 		body {
     background-color: lightblue; /* fondo de la paginaa /*
   }
 </style>
 
-<table>
-	
-	<tr> <h1> Mis Archivos</h1> </tr>
 <tr>
-        <th></th>
+        <th><a href="https://maxicorrosa.github.io/ejercicio3casassss/2da pagina.html"></a></th>
        
 </tr>
 <tr>
-        <th></th>
+        <th><a href="https://www.google.com.ar/">Google</a></th>
 
 </tr>
 <tr>
-        <th></th>
+        <th><a href=""></a></th>
 </tr>
 
 <tr>
-        <th></th>
+        <th><a href=""></a></th>
 </tr>
 	
-</table>
+	
+
 </body>
 </html>
