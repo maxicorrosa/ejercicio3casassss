@@ -1,0 +1,44 @@
+<html>
+<body>
+<style>
+ table {
+    width: 10%;
+    border-collapse: 4px;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: middle;
+    border-bottom: 1px solid black; /* lineas del cuadro */
+  }
+
+  th {
+    background-color: lightgreen; /* color del cartel de arriba */
+  }
+		body {
+    background-color: lightblue; /* fondo de la paginaa /*
+  }
+</style>
+
+<table>
+	
+	<tr> <h1> Mis Archivos</h1> </tr>
+<tr>
+        <th></th>
+       
+</tr>
+<tr>
+        <th></th>
+
+</tr>
+<tr>
+        <th></th>
+</tr>
+
+<tr>
+        <th></th>
+</tr>
+	
+</table>
+</body>
+</html>
