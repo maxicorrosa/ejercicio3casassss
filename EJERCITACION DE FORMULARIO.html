@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Formulario</title>
+</head>
+<body>
+  <h1>Rellena tu CV</h1>
+  
+<form method="POST" action="procesar.php">
+
+    <label for="nombre">Nombre</label>
+<br>
+    <input type="text" id="nombre" name="nombre" required>
+<br></br>
+    
+
+    <label for="apellidos">Apellidos</label>
+<br>
+    <input type="text" id="apellidos" name="apellidos" required><br>
+<br>
+
+
+    <label for="password">Contraseña</label>
+<br>
+    <input type="password" id="password" name="password" required><br>
+<br> 
+
+
+    <label for="dni">DNI</label>
+<br>
+    <input type="text"  name="dni" id="dni" pattern="[0-9]+" required><br>
+<br>
+
+
+  <label for="Sexo">Sexo</label>
+<br>
+  <input type="radio" name="Sexo" > Hombre
+<br>
+  <input type="radio" name="Sexo" > Mujer
+<br></br>
+
+
+   <label for="Foto">Incluir mi foto</label>
+   <input type="file" value="elegir..." > 
+
+
+<br></br>   
+    <input type="checkbox"  name="boletin" checked>
+    <label for="boletin">Suscribirme al boletín de novedades</label>
+ 
+<br></br>
+    
+<input type="submit" value="Guardar cambios">
+<input type="reset" value="Borrar los datos introducidos">
+
+  </form>
+</body>
+</html>
