@@ -1,0 +1,115 @@
+<html>
+<head>
+  <title>Ejercicio3-seccion2</title>
+</head>
+<style>
+
+body {
+    background-color: #F5F5DC ;
+  }
+
+
+  .texto-limitado {
+    max-width: 400px;
+    margin: 0 auto; 
+  }
+  .texto-limitado2 {
+    max-width: 500px;
+    margin: 0 auto ; 
+  }
+
+
+ .texto-izquierdo {
+      float: left;
+      width: 50%; 
+    }
+ .texto-derecho {
+      float: right;
+      width: 50%; 
+    }
+
+
+ .enlace-cuadrado {
+      display: inline-block;
+      padding: 5px;
+      width: 100px;
+      height: 55px;
+      text-align: center;
+      border: 2px solid black;
+      background-color: lightblue;
+      text-decoration: none;
+      color: black;
+    }
+
+
+
+</style>
+
+<body>
+
+<div class="texto-limitado">
+  <h1>Como hacer un bizcochuelo</h1>
+</div> 
+
+
+<br></br>
+<br></br>
+
+<div class="texto-izquierdo">
+
+<strong>Ingredientes para el bizcochuelo básico:</strong>
+
+<p>100 gramos de manteca</p>
+<p>1 cucharadita de esencia de vainilla</p>
+<p>Ralladura de limón a gusto</p>
+<p>3 huevos</p>
+<p>2 tazas de harina 0000</p>
+<p>1 cucharadita de polvo de hornear</p>
+<p>1 taza de azúcar</p>
+<p>1 taza de leche</p>
+<p>De bizcochuelo a torta de cumpleaños</p>
+<p>Bizcochuelo, mejor preparalo un día antes. Así será más fácil cortarlo sin romperlo para rellenar.</p>
+<p>500 gramos de dulce de leche, idealmente repostero</p>
+<p>500 gramos de duraznos en mitades en almíbar (1 lata). El almíbar lo vas a usar para mojar las capas de bizcochuelo.</p>
+<p>500 gramos de crema ya batida y con azúcar</p>
+
+</div>
+
+
+<div class="texto-derecho">
+
+<p>Con todos los ingredientes a mano empieza la parte más divertida. Batí la manteca con el azúcar hasta formar una crema. Incorporá la esencia de vainilla y la ralladura de limón. Integrá bien todos los ingredientes.</p>
+
+<p>Agregá los huevos de a uno mientras seguís batiendo hasta tener una textura homogénea.</p>
+
+<p>Incorporá la harina previamente tamizada con el polvo para hornear y la leche poco a poco. Podés usar batidora o batidor de alambre. Para que no se formen grumos, unificá con movimientos envolventes la mezcla luego de cada taza.</p>
+
+<p>Una vez lograda una masa homogénea, batí nuevamente de forma envolvente para que ingrese aire. Una vez integrados todos los ingredientes batí en forma envolvente por 5 minutos.</p>
+
+<p>Enmantecá y enhariná un molde para torta.</p>
+
+<p>Volcá la preparación en el molde y cociná en horno moderado por 40 minutos aproximadamente.</p>
+
+<p>Comprobá si esta cocida la preparación pinchando con un cuchillo seco en el centro del bizcochuelo. Si sale limpio sacalo del horno.</p>
+
+<p>Dejá enfriar, no te apures con el desmolde. Esperá mínimo unos 15 minutos.</p>
+
+<p>De bizcochuelo a torta de cumpleaños</p>
+
+<p>Como ya te contamos esta receta de bizcochuelo se puede transformar en la base de una torta de cumpleaños riquísima. Te compartimos una idea sencilla: comenzá abriendo el bizcochuelo a la mitad para que te queden dos discos.</p>
+
+<p>Humedecé las dos mitades con el almíbar del durazno y esperá unos minutos que se absorba bien.</p>
+
+<p>En el disco base, untá dulce de leche y crema en toda la superficie. Después agregá los duraznos cortados en rodajas.</p>
+
+<p>Con cuidado uní los dos discos del bizcochuelo y cubrilos por completo con lo que te quedó de crema.</p>
+
+<p>Rompé los copitos de merengue y espolvorearlos sobre la parte superior.</p>
+
+</div>
+
+<br></br>
+
+  <a href="index.html" class="enlace-cuadrado">Volver a la página principal</a>
+</body>
+</html>
