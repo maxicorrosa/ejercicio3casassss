@@ -1,0 +1,118 @@
+<html>
+
+<head>
+  <title>Formulario</title>
+</head>
+
+<style>
+
+body {
+ 	background-color: #F5F5DC ;
+}
+
+	.casilla-texto {
+	width: 75px;
+}
+	.casilla-numero {
+	width: 39px;
+}
+	.contenedor-cuadrado {
+  	width: 300px;
+  	height: 220px;
+  	background-color: #F5F5DC ;
+ 	 border: 2px solid #ccc;
+  	border-radius: 1px;
+  	padding: 20px;
+  	margin: 0 ;
+  	text-align: left;
+}
+
+	.contenedor-cuadrado h1 {
+ 	 margin-top: 0;
+}
+
+	.contenedor-cuadrado form {
+ 	 margin-top: 20px;
+}
+
+	.texto-borde {
+ 	 position: absolute;
+ 	 top: 57px;
+  	left: 10%;
+  	transform: translateX(-40%);
+  	background-color: #F5F5DC ;
+	border: 0px solid #ccc;
+
+}
+
+</style>
+
+<body>
+  	<h1>Rellena tu CV</h1>
+  
+
+<div class="contenedor-cuadrado">
+ <span class="texto-borde">Datos personales</span>
+	<form method="POST" action="procesar.php">
+
+   
+
+
+
+  <label for="Provincia">Provincia</label>
+  <select id="Provincia">
+    <option value="opcion1">- Selecciona -</option>
+    <option value="opcion2">Buenos Aires</option>
+    <option value="opcion3">Cordoba</option>
+    <option value="opcion4">Santa Fe</option>
+    <option value="opcion5">Formosa</option>
+    <option value="opcion6">La Pampa</option>
+    <option value="opcion7">Misiones</option>
+    <option value="opcion8">Tierra del Fuego</option>
+  </select>
+<br></br>
+   
+
+    <label for="Fecha">Fecha de nacimiento</label>
+<br>
+    <input type="number"  name="Fecha" id="Fecha"  class="casilla-numero" required> de
+
+<label for="Mes"></label>
+  <select id="Mes" name="Mes" required>
+    <option value="opcion">Enero</option>
+    <option value="opcion">Febrero</option>
+    <option value="opcion">Marzo</option>
+    <option value="opcion">Abril</option>
+    <option value="opcion">Mayo</option>
+    <option value="opcion">Junio</option>
+    <option value="opcion">Julio</option>
+    <option value="opcion">Agosto</option>
+    <option value="opcion">Septiembre</option>
+    <option value="opcion">Octubre</option>
+    <option value="opcion">Noviembre</option>
+    <option value="opcion">Diciembre</option>
+  </select>
+de
+    <label for="Año"></label>
+    <input type="text"  name="Año" id="Año" class="casilla-texto" required>
+<br></br>
+
+ <label for="Tema de interes">Tema de interes</label>
+<br>
+  <select id="Tema de interes" name="Tema de interes" size="5">
+    <option value="opcion">Administracion de bases de datos</option>
+    <option value="opcion">Analisis y programacion</option>
+    <option value="opcion">Arquitecutra</option>
+    <option value="opcion">Calidad</option>
+    <option value="opcion">ERP, CRM, Business Intelligence</option>
+    <option value="opcion">no</option>
+    <option value="opcion">se</option>
+    <option value="opcion">que</option>
+    <option value="opcion">mas</option>
+    <option value="opcion">poner</option>
+
+  </select>
+
+  </form>
+</body>
+</html>
