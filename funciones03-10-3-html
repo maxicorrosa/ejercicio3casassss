@@ -39,5 +39,6 @@ background-color: #F5F5DC;
 <form>
 <input type="button" onclick="calculateTriangleProperties()" value="Calcular">
 </form>
+ <br> <a href="https://maxicorrosa.github.io/ejercicio3casassss/index2.html">volver</a>
 </body>
 </html>
