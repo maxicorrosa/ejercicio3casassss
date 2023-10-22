@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function calculateTriangleProperties() {
+  var base = parseFloat(prompt("Ingresa la base del triángulo:"));
+  var altura = parseFloat(prompt("Ingresa la altura del triángulo:"));
+
+  var hipotenusa = calcularHipotenusa(base, altura);
+  var perimetro = calcularPerimetro(base, altura);
+  var superficie = calcularSuperficie(base, altura);
+
+  document.write("Hipotenusa: " + hipotenusa + "<br>");
+  document.write("Perímetro: " + perimetro + "<br>" );
+  document.write("Superficie: " + superficie);
+}
+
+function calcularHipotenusa(base, altura) {
+  return Math.sqrt(base * base + altura * altura);
+}
+
+function calcularPerimetro(base, altura) {
+  return base + altura + calcularHipotenusa(base, altura);
+}
+
+function calcularSuperficie(base, altura) {
+  return (base * altura) / 2;
+}
+//-->
+</script>
+<style>
+ body {
+background-color: #F5F5DC;
+}
+</style>
+</head>
+<body>
+<p>Propiedades de un Triángulo</p>
+<form>
+<input type="button" onclick="calculateTriangleProperties()" value="Calcular">
+</form>
+</body>
+</html>
