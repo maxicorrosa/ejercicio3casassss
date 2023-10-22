@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function esTriangulo(a, b, c) {
+  return (a + b > c) && (a + c > b) && (b + c > a);
+}
+
+function Triangulo() {
+  var lado1 = parseFloat(prompt("primer lado del triángulo:"));
+  var lado2 = parseFloat(prompt("segundo lado del triángulo:"));
+  var lado3 = parseFloat(prompt("tercer lado del triángulo:"));
+
+  var esTri = esTriangulo(lado1, lado2, lado3);
+
+    if (esTri) {
+      document.write("Es un triángulo");
+    } else {
+      document.write("No es un triángulo");
+    }
+  }
+//-->
+</script>
+<style>
+ body {
+background-color: #F5F5DC;
+}
+</style>
+</head>
+<body>
+<p>Verificar Triángulo</p>
+<form>
+<input type="button" onclick="Triangulo()" value="Verificar">
+</form>
+</body>
+</html>
