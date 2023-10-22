@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function hypotenuse(a, b) {
+ function square(x) { return x*x; }
+
+ return Math.sqrt(square(a) + square(b));
+}
+
+function secondFunction(){
+ var result;
+ result = hypotenuse(4,7); 
+ document.write(result); 
+}
+//-->
+</script>
+<style>
+ body {
+background-color: #F5F5DC;
+}
+</style>
+</head>
+<body>
+<p>Calcular la Hipotenusa</p>
+<form>
+<input type="button" onclick="secondFunction()" value="Resultado">
+</form>
+</body>
+</html>
