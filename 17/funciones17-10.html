@@ -1,0 +1,89 @@
+<html>
+<head>
+<script type="text/javascript">
+function calcularResultados() {
+  const R = parseFloat(document.getElementById("r").value);
+  const L = parseFloat(document.getElementById("l").value);
+  const C = parseFloat(document.getElementById("c").value);
+  const F = parseFloat(document.getElementById("f").value);
+
+  function calcularXL() {
+    return 2 * Math.PI * F * L;
+  }
+
+  function calcularXC() {
+    return 1 / (2 * Math.PI * F * C);
+  }
+
+  function calcularModuloZ() {
+    const XL = calcularXL();
+    const XC = calcularXC();
+    return Math.sqrt(Math.pow(R, 2) + Math.pow(XL - XC, 2));
+  }
+
+  function calcularPhi() {
+    const XL = calcularXL();
+    const XC = calcularXC();
+    return Math.atan((XL - XC) / R);
+  }
+
+  function calcularParteRealZ() {
+    return R;
+  }
+
+  function calcularParteImaginariaZ() {
+    const XL = calcularXL();
+    const XC = calcularXC();
+    return XL - XC;
+  }
+
+  const XL = calcularXL();
+  const XC = calcularXC();
+  const moduloZ = calcularModuloZ();
+  const phi = calcularPhi();
+  const parteRealZ = calcularParteRealZ();
+  const parteImaginariaZ = calcularParteImaginariaZ();
+
+  document.getElementById("xl_result").innerHTML = `XL: ${XL}`;
+  document.getElementById("xc_result").innerHTML = `XC: ${XC}`;
+  document.getElementById("modulo_z_result").innerHTML = `Módulo de Z: ${moduloZ}`;
+  document.getElementById("phi_result").innerHTML = `Ángulo de fase (phi): ${phi}`;
+  document.getElementById("parte_real_z_result").innerHTML = `Parte real de Z: ${parteRealZ}`;
+  document.getElementById("parte_imaginaria_z_result").innerHTML = `Parte imaginaria de Z: ${parteImaginariaZ}`;
+}
+</script>
+  
+<style>
+ body {
+background-color: #F5F5DC;
+}
+</style>
+  
+</head>
+<body>
+<h1>Cálculo de Propiedades Eléctricas</h1>
+<form>
+  <label for="r">R:</label>
+  <input type="text" id="r" name="r"><br><br>
+
+  <label for="l">L:</label>
+  <input type="text" id="l" name="l"><br><br>
+
+  <label for="c">C:</label>
+  <input type="text" id="c" name="c"><br><br>
+
+  <label for="f">F:</label>
+  <input type="text" id="f" name="f"><br><br>
+
+  <input type="button" value="Calcular" onclick="calcularResultados()">
+</form>
+
+<h2>Resultados:</h2>
+<div id="xl_result"></div>
+<div id="xc_result"></div>
+<div id="modulo_z_result"></div>
+<div id="phi_result"></div>
+<div id="parte_real_z_result"></div>
+<div id="parte_imaginaria_z_result"></div>
+</body>
+</html>
