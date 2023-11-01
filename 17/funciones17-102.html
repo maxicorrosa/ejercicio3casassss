@@ -1,0 +1,58 @@
+
+<html>
+<head>
+  <title>Cálculo de Energía Potencial y Velocidad al Suelo</title>
+</head>
+<body>
+  <h1>Cálculo de Energía Potencial y Velocidad al Suelo</h1>
+  <form>
+    <label for="masa">Masa (kg):</label>
+    <input type="text" id="masa" name="masa"><br><br>
+
+    <label for="altura">Altura (metros):</label>
+    <input type="text" id="altura" name="altura"><br><br>
+
+    <input type="button" value="Calcular" onclick="pedirDatos()">
+  </form>
+
+  <h2>Resultado:</h2>
+  <div id="resultado"></div>
+
+  <script type="text/javascript">
+    function calcularEp(m, h) {
+      const g = 9.81;
+      const Ep = m * g * h;
+      return Ep;
+    }
+
+    function calcularVelocidadAlSuelo(Ep, m) {
+      const v = Math.sqrt((2 * Ep) / m);
+
+      if (v > 100) {
+        return `¡Qué rápido! La velocidad al tocar el suelo es ${v} m/s`;
+      } else {
+        return `Va relativamente lento. La velocidad al tocar el suelo es ${v} m/s`;
+      }
+    }
+
+    function pedirDatos() {
+      const masa = parseFloat(document.getElementById("masa").value);
+      const altura = parseFloat(document.getElementById("altura").value);
+      const resultadoDiv = document.getElementById("resultado");
+
+      if (!isNaN(masa) && !isNaN(altura)) {
+        const Ep = calcularEp(masa, altura);
+        const resultado = calcularVelocidadAlSuelo(Ep, masa);
+        resultadoDiv.innerHTML = resultado;
+      } else {
+        resultadoDiv.innerHTML = "Por favor, ingresa valores numéricos válidos.";
+      }
+    }
+  </script>
+<style>
+ body {
+background-color: #F5F5DC;
+}
+</style>
+</body>
+</html>
